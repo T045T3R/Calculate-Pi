@@ -27,5 +27,5 @@ decimals = int(decimals)
 intlist = range(0, int(n))
 pi = lambda n: (4*((-1)**n)/((2*n)+1))
 pidigits = [pi(x) for x in list(intlist)]
-PI = int(sum(pidigits))
+PI = sum(pidigits)
 print("The approximate value of pi is "+ (round(PI, decimals)))
