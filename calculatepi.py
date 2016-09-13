@@ -22,7 +22,7 @@ Note: remember that the printed value of pi will be an estimate!
 
 """
 n = input ("accuracy?")
-intlist = range(1, int(n))
+intlist = range(0, int(n))
 pi = lambda n: (4*((-1)**n)/((2*n)+1))
 pidigits = [pi(x) for x in list(intlist)]
 PI = sum(pidigits)
