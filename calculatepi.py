@@ -26,5 +26,5 @@ decimals=input ("How many decimal places should I use in the result? ")
 intlist = range(0, int(n))
 pi = lambda n: (4*((-1)**n)/((2*n)+1))
 pidigits = [pi(x) for x in list(intlist)]
-PI = int(sum(pidigits))
-print("The approximate value of pi is {0}".format(round(PI, decimals)))
+PI = sum(pidigits)
+print("The approximate value of pi is ".format(round(PI, decimals)))
