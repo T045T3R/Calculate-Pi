@@ -21,9 +21,10 @@ The approximate value of pi is 3.1315929
 Note: remember that the printed value of pi will be an estimate!
 
 """
-n = input ("accuracy?")
+n = input ("I will estimate pi. How many terms should I use? ")
+d=input ("How many decimal places should I use in the result? ")
 intlist = range(0, int(n))
 pi = lambda n: (4*((-1)**n)/((2*n)+1))
 pidigits = [pi(x) for x in list(intlist)]
 PI = sum(pidigits)
-print(PI)
+print("The approximate value of pi is "+format.round(PI,d))
