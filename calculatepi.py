@@ -22,4 +22,5 @@ Note: remember that the printed value of pi will be an estimate!
 
 """
 n = input ("accuracy?")
-intlist = range(1,n)
+intlist = range[1, int(n)]
+print(intlist)
