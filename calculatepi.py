@@ -23,7 +23,7 @@ Note: remember that the printed value of pi will be an estimate!
 """
 n = input ("I will estimate pi. How many terms should I use? ")
 decimals=input ("How many decimal places should I use in the result? ")
-decimals = int(decimals)
+decimals = int(decimals + 2)
 intlist = range(0, int(n))
 pi = lambda n: (4*((-1)**n)/((2*n)+1))
 pidigits = [pi(x) for x in list(intlist)]
