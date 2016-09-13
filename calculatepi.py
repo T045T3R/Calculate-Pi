@@ -23,8 +23,9 @@ Note: remember that the printed value of pi will be an estimate!
 """
 n = input ("I will estimate pi. How many terms should I use? ")
 decimals=input ("How many decimal places should I use in the result? ")
+decimals = int(decimals)
 intlist = range(0, int(n))
 pi = lambda n: (4*((-1)**n)/((2*n)+1))
 pidigits = [pi(x) for x in list(intlist)]
-PI = sum(pidigits)
-print("The approximate value of pi is "+ (round(int(PI), decimals)))
+PI = int(sum(pidigits))
+print("The approximate value of pi is "+ (round(PI, decimals)))
